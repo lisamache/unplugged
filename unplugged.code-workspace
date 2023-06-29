@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../unplugged"
+		},
+		{
+			"path": "../unplugged-folder/unplugged-solution"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "unplugged"
+	}
+}
