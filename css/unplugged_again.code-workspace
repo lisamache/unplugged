@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../unplugged-solutions/unplugged-css-layout-first"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "unplugged_again"
+	}
+}
