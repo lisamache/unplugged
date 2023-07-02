@@ -381,15 +381,57 @@ margin:20px 0;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   /*********ABOUT PAGE*********/
+@media only screen and (min-width:768px) {
+  /*****TABLET STYLES HERE*****/
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  
+  .mission-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start ;
+  }
+
+  /*.contact-content div {
+    width:35%;
+}*/
+
+
+   /*********FAQ PAGE*********/
+   .faq .content-wrapper {
+    justify-content: space-between;
+    /*display: flex;*/
+
+   /* align-items: flex-start;*/
+   }
+
+   .faq h2 {
+    width:100%;
+   }
+
+   .faq-content {
+    /*display: flex;
+    align-items: flex-start;
+    /*justify-content: space-between;*/
+    flex-basis: 45%;
+   }
+  }
+@media only screen and (min-width:1200px) {
+  /*****DESKTOP STYLES HERE*****/
 }
 
 /* ==========================================================================
