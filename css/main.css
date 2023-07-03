@@ -87,6 +87,64 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+header nav ul {
+  font-size: 1.125em;
+  font-weight: bold;
+  list-style: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 2.69em;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500
+}
+
+h3,
+h4 {
+  font-size: 1.125em;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+}                     
+
+.faq-content h4 {
+  line-height: 1.5em;
+}
+
+p{
+  font-size: 0.875em;
+  line-height: 1.285em;
+}
+
+address {
+  font-style: normal;
+}
+
+input p {
+  font-size: 2.375em;
+  font-weight: 500;
+}
+
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
@@ -226,7 +284,7 @@ aside {
 }
 
 .features p {
-  margin:0;
+  margin: 0;
 }
 
 /* Reviews */
@@ -235,13 +293,14 @@ aside {
   justify-content: center;
 }
 
-.reviews h2{
+.reviews h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
-.reviews h3{
-width: 51%;
-margin:20px 0;
+.reviews h3 {
+  width: 51%;
+  margin: 20px 0;
 }
 
 /********************** About Page *********************/
@@ -274,7 +333,7 @@ margin:20px 0;
   flex-flow: row wrap;
   align-items: flex-start;
   margin: 50px 0 0 0;
- /* text-align: left;*/
+  /* text-align: left;*/
 }
 
 .faq h2 {
@@ -381,14 +440,14 @@ margin:20px 0;
    Modify as content requires.
    ========================================================================== */
 
-  
+
 @media only screen and (min-width:768px) {
   /*****TABLET STYLES HERE*****/
 
   /* General styles */
   .content-wrapper {
     outline: 3px dotted red;
-    max-width:640px;
+    max-width: 640px;
     margin: 100px 0;
   }
 
@@ -471,12 +530,12 @@ margin:20px 0;
     width: 100%;
   }
 
-   /*********ABOUT PAGE*********/
+  /*********ABOUT PAGE*********/
   .mission-content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top:20px;
+    padding-top: 20px;
   }
 
   .mission-content p {
@@ -490,7 +549,7 @@ margin:20px 0;
   .contact-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start ;
+    align-items: flex-start;
   }
 
   /*.contact-content div {
@@ -498,22 +557,23 @@ margin:20px 0;
 }*/
 
 
-   /*********FAQ PAGE*********/
-   .faq .content-wrapper {
+  /*********FAQ PAGE*********/
+  .faq .content-wrapper {
     justify-content: space-between;
-  
-   }
 
-   .faq h2 {
-    width:100%;
-   }
-
-   .faq-content {
-    flex-basis: 45%;
-   }
   }
 
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+}
+
 @media only screen and (min-width:1200px) {
+
   /*****DESKTOP STYLES HERE*****/
   .content-wrapper {
     outline: 3px dotted red;
@@ -562,9 +622,9 @@ margin:20px 0;
   }
 
   /*********FAQ PAGE*********/
-.faq h2 {
-  width: 100%;
-}
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
