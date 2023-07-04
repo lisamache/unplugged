@@ -116,11 +116,12 @@ a {
   text-decoration: none;
 }
 
-.hero-area h1 {
-  font-size: 2.25em;
-  line-height: 2.69em;
-  font-weight: 500;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 h2 {
@@ -177,11 +178,8 @@ header .content-wrapper {
   margin: 0;
 }
 
-/*figure {
-  padding-top: 15px;
-  padding-bottom: 10px;
-  margin-right:0;
-  margin-left: 0;*/
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -261,6 +259,7 @@ footer .social-icons p {
   text-align: center;*/
 }
 
+
 footer .copyright {
   margin: 20px 0;
 }
@@ -269,16 +268,29 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../unplugged-design-docs/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
+  min-height: 500px;
   /*margin: 0;*/
 }
+
+.hero-area h1 {
+  font-size: 2.25em;
+  line-height: 1.2;
+  font-weight: 500;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+
 
 /* Aside */
 aside {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
   background: #527158;
 }
 
@@ -310,6 +322,10 @@ input[type=button] {
 
 /* Features */
 .features {
+  background: url(../unplugged-design-docs/unplugged-retreat-features.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
@@ -331,6 +347,7 @@ input[type=button] {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
@@ -347,7 +364,7 @@ input[type=button] {
 }
 
 .reviews h3 {
-  width: 51%;
+  width: 55%;
   margin: 20px 0;
 }
 
@@ -489,6 +506,7 @@ input[type=button] {
   clear: both;
 }
 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -501,9 +519,18 @@ input[type=button] {
 
   /* General styles */
   .content-wrapper {
-    outline: 3px dotted red;
     max-width: 640px;
     margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.33;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
   }
 
   /* Header */
@@ -514,6 +541,10 @@ input[type=button] {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width:30%;
   }
 
   header nav {
@@ -529,6 +560,15 @@ input[type=button] {
   }
 
   /* Hero Area */
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -552,9 +592,14 @@ input[type=button] {
     flex-basis: 50%;
   }
 
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features .features-item-description {
     width: 62%;
   }
+
 
   /* Reviews */
   .reviews article {
@@ -562,8 +607,18 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -571,10 +626,11 @@ input[type=button] {
     width: 65%;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
@@ -583,6 +639,16 @@ input[type=button] {
 
   footer .copyright {
     width: 100%;
+  }
+
+  footer h4,
+  .contact h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.125em;
   }
 
   /*********ABOUT PAGE*********/
@@ -607,9 +673,9 @@ input[type=button] {
     align-items: flex-start;
   }
 
-  /*.contact-content div {
-    width:35%;
-}*/
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
 
 
   /*********FAQ PAGE*********/
@@ -625,14 +691,34 @@ input[type=button] {
   .faq-content {
     flex-basis: 45%;
   }
+
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 1.125;
+  }
 }
+
 
 @media only screen and (min-width:1200px) {
 
   /*****DESKTOP STYLES HERE*****/
   .content-wrapper {
-    outline: 3px dotted red;
     max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
   }
 
   /* Header */
@@ -643,6 +729,7 @@ input[type=button] {
   /* Hero */
   .hero-area h1 {
     width: 80%;
+    font-size: 3.75em;
   }
 
   /* Aside */
@@ -653,6 +740,10 @@ input[type=button] {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
   /* Features */
@@ -666,27 +757,49 @@ input[type=button] {
   }
 
   /* Reviews */
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
   .reviews article div {
     width: 42%;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
   }
 
   /*********ABOUT PAGE*********/
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
   /*********FAQ PAGE*********/
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
 }
+
 
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
 
 @media print {
 
