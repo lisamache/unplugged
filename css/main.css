@@ -666,6 +666,22 @@ input[type=button] {
     margin-bottom: 0;
   }
 
+  footer .social-icons a {
+    margin-right: 25px;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer .social-icons p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   footer .copyright {
     width: 100%;
   }
@@ -679,6 +695,7 @@ input[type=button] {
   footer p {
     line-height: 1.125em;
   }
+
 
   /*********ABOUT PAGE*********/
   .mission-content {
